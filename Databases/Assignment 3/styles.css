@@ -1,0 +1,20 @@
+/* just some very basic styling for some stuff */
+p.radioTitle {
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+}
+table {
+    border-spacing: 15px 0;
+}
+.delBtn {
+    border-radius: 10%;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+.delBtn:hover {
+    border-radius: 10%;
+    background: red;
+    color: silver;
+}
