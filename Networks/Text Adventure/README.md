@@ -21,11 +21,13 @@
 ### TLDR
 ----
 `discovery.py` - start first: `python3 discovery.py`  
+
 `room.py` - start any rooms (servers) that should be online next: 
 - `python3 room.py [-m CONNECTED_ROOM] NAME DESCRIPTION [ITEMS]`
 - -m is represents a direction; followed by name of the connected room
 - possible directions: n,s,e,w,u,d (u = up; d = down)
-- `ITEMS` (if any) MUST be immediately after `DESCRIPTION`
+- `ITEMS` (if any) MUST be immediately after `DESCRIPTION`  
+
 `player.py` - start instance of a player:   `python3 player.py USERNAME SERVER_NAME`
 
 
