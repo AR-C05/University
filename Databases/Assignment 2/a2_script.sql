@@ -64,7 +64,7 @@ SELECT p.firstname, p.lastname, d.firstname, d.lastname FROM patient p, doctor d
     WHERE l.ohipnum=p.ohipnum AND l.licensenum=d.licensenum AND d.licensenum=h.headdoc;
 
 -- Query 11 - Find all the surgeons (last name and first name) who work at a hospital called Victoria. Also list the hospital's province for each surgeon.
-SELECT lastname, firstname, prov FROM doctor, hospital WHERE hosworksat=hoscode AND hosname='Victoria';
+SELECT lastname, firstname, prov FROM doctor, hospital WHERE hosworksat=hoscode AND hosname='Victoria' AND speciality="Surgeon";
 
 -- Query 12 - Find the first name of all doctors who don't treat anyone.
 SELECT DISTINCT firstname FROM doctor, looksafter WHERE doctor.licensenum NOT IN (SELECT licensenum FROM looksafter);
