@@ -1,0 +1,4 @@
+#!/bin/bash
+g++ PenTool.cpp -lGL -lglfw -o autoCompExPen
+./autoCompExPen 700 700
+rm autoCompExPen
